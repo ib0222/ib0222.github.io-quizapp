@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/cinema-background.webp);
+}
+
+img{
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+.container{
+    background-color:#efcc00; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+    width: 500px;
+    height: 700px;
+    border: 1px solid black;
+    
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    width: 300px;
+}
+button:hover{
+    background-color: #fff;
+}
+
+.dogru-sayi{
+    background-color: #fff;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    font-size: 200px;
+    color: green;
+    transform: translate(-50%,-50%);
+}
+
+.yanlis-sayi{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    color: darkred;
+    font-size: 200px;
+}
+.ending-title{
+    position: absolute;
+    top:40%;
+    font-size: 100px;
+    color: #fff;
+}
+.ending-button{
+    position: absolute;
+    top: 60%;
+    font-size: 20px;
+    
+}
+
+.ending-result{
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    color: white;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .yanlis-sayi{
+        position: absolute;
+        top: 25%;
+        left: 8%;
+        background: none;
+        font-size: 100px;
+    }
+    .dogru-sayi{
+        position: absolute;
+        right: 15%;
+        top: 25%;
+        background: none;
+        font-size: 100px;
+    }
+
+    .ending-title{
+        font-size: 50px;
+    }
+
+}
